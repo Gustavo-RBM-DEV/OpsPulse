@@ -31,7 +31,14 @@ com cerca de 100 mil pedidos de 2016 a 2018, licenciado sob
 
 ## Como executar
 
-_Em construção._
+Pré-requisitos: Docker (com Docker Compose) e make. No Windows, use o WSL2.
+
+```bash
+cp .env.example .env   # depois troque a senha no .env
+make up                # sobe o PostgreSQL
+make psql              # abre o terminal do banco
+make down              # para o ambiente
+```
 
 ## Licença
 

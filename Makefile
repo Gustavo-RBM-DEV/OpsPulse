@@ -1,6 +1,6 @@
 -include .env
 
-.PHONY: up down logs psql
+.PHONY: up down logs psql db-check
 
 up:
 	docker compose up -d --wait
@@ -13,3 +13,6 @@ logs:
 
 psql:
 	docker compose exec postgres psql -U $(POSTGRES_USER) -d $(POSTGRES_DB)
+
+db-check:
+	docker compose exec -T postgres psql -U $(POSTGRES_USER) -d $(POSTGRES_DB) -c "select 1"

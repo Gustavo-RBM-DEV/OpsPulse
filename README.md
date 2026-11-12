@@ -1,4 +1,5 @@
 # OpsPulse
+![CI](https://github.com/Gustavo-RBM-DEV/OpsPulse/actions/workflows/ci.yml/badge.svg)
 
 Plataforma de inteligência operacional para e-commerce, integrando engenharia de dados,
 analytics e engenharia de software.

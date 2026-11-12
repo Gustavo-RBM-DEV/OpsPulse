@@ -1,0 +1,25 @@
+# Dados: não versionar (licença e tamanho)
+data/
+
+# Segredos
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Java / Maven
+target/
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Editores / SO
+.idea/
+.vscode/
+.DS_Store
